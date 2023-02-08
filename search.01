@@ -1,0 +1,15 @@
+x = int(input("What Number do you want to find(1-6)"))
+def l_search(search):
+  Items = [0,1,2,3,4,5,6]
+  found_index = -1
+  count = 0
+  found = False
+  while count < len(Items) and not found:
+    if Items[count] == search:
+      found_index = count
+      found = True
+    count += 1
+  return found_index
+print("The Number is at position:" , l_search(x+1))
+  
+
